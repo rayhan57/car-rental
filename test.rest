@@ -1,0 +1,101 @@
+GET http://localhost:3000/api/customers
+
+#####
+
+POST http://localhost:3000/api/customers
+ 
+{
+    "id_customer": "",
+    "nama": "Rayhan",
+    "alamat": "Bekasi",
+    "nomor_telepon": "089602878147",
+    "email": "rayhanb18@gmail.com"
+}
+
+#####
+
+PUT http://localhost:3000/api/customers/8
+
+{
+    "id_customer": "8",
+    "nama": "Rayhan",
+    "alamat": "Jatiwaringin",
+    "nomor_telepon": "089602878147",
+    "email": "rayhanb18@gmail.com"
+}
+
+#####
+
+DELETE  http://localhost:3000/api/customers/8
+
+#####
+
+GET http://localhost:3000/api/cars
+
+#####
+
+GET http://localhost:3000/api/cars/B 1406 RLB
+
+#####
+
+POST http://localhost:3000/api/cars
+
+{
+    "nomor_polisi": "B 2202 SWR",
+    "merk": "Toyota",
+    "model": "Veloz",
+    "tahun": 2023,
+    "harga_sewa": 350000,
+    "status": "Tersedia"
+}
+
+#####
+
+PUT http://localhost:3000/api/cars/B 2202 SWR
+
+{
+    "nomor_polisi": "B 2202 SWR",
+    "merk": "Toyota",
+    "model": "Veloz",
+    "tahun": 2023,
+    "harga_sewa": 350000,
+    "status": "Disewa"
+}
+
+#####
+
+DELETE http://localhost:3000/api/cars/B 2202 SWR
+
+#####
+
+GET http://localhost:3000/api/sales
+
+#####
+
+POST http://localhost:3000/api/sales
+
+{
+    "id_sales": "",
+    "nama": "Arman",
+    "nomor_telepon": "087743019605",
+    "email": "arman21@gmail.com"
+}
+
+#####
+
+PUT http://localhost:3000/api/sales/6
+
+{
+    "id_sales": "6",
+    "nama": "Arman",
+    "nomor_telepon": "087743019605",
+    "email": "arman21@gmail.com"
+}
+
+#####
+
+DELETE http://localhost:3000/api/sales/6
+
+#####
+
+GET https://simple-car-rental.vercel.app/api/sewa
